@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Cielo Kitchen</title>
+        <!-- Los estilos CSS legítimos sí van en link stylesheet -->
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header class="topbar">
+            <h1>Inicia sesión o regístrate</h1>
+        </header>
+        <main>
+            <section>
+                <h1>Iniciar sesión</h1>
+                
+                <!-- 1. Envolvemos todo en un formulario que apunta a tu script de verificación -->
+                <form action="../scripts/verificar_datos.php" method="POST">
+                    
+                    <label for="usuario">Usuario:</label>
+                    <!-- 2. Corregimos los 'name' para que cada input tenga su nombre correcto -->
+                    <input type="text" id="usuario" name="usuario" required>
+                    
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+                    
+                    <button type="submit">Ingresar</button>
+                </form>
+
+                <h1>---</h1>
+                <a href="registro.php">Registrarse</a>
+            </section>
+        </main>
+    </body>
+</html>

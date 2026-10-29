@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cielo Kitchen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="logo" href="#menu">Cielo Kitchen ☀</a>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#menu" class="activo">Menú</a>
+    <a href="#promociones">Promociones</a>
+    <a href="#sucursales">Sucursales</a>
+  </nav>
+  <a class="btn" href="#pedido">Ordena ahora</a>
+</header>
+
+<!-- 1. MENÚ -->
+<main id="menu" class="vista por-defecto">
+  <section class="hero">
+    <h1>Nuestro menú</h1>
+    <p>Cocina tradicional hecha con cariño para compartir en familia.</p>
+  </section>
+  <div class="tabs">
+    <a href="#menu">Entradas</a><a href="#menu">Platos fuertes</a><a href="#menu">Asados y parrilla</a>
+    <a href="#menu">Guisos de la casa</a><a href="#menu">Postres tradicionales</a><a href="#menu">Bebidas</a>
+  </div>
+
+  <div class="categorias">
+    <section class="cat"><h2>Entradas</h2>
+      <article class="item"><div class="foto">🍲</div><div><h3>Sopa de la abuela</h3><p>Calentita y reconfortante, como la de siempre.</p><div class="precio-fila"><span class="precio">$65</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🥟</div><div><h3>Empanadas de horno</h3><p>Hechas hacia quedar doraditas y crujientes.</p><div class="precio-fila"><span class="precio">$55</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🌮</div><div><h3>Tostadas de frijol</h3><p>Crujientes con frijoles refritos y queso.</p><div class="precio-fila"><span class="precio">$45</span><button class="chico">Agregar</button></div></div></article>
+    </section>
+
+    <section class="cat"><h2>Platos fuertes</h2>
+      <article class="item"><div class="foto">🍽️</div><div><h3>Milanesa con puré</h3><p>Clásica milanesa con puré cremoso.</p><div class="precio-fila"><span class="precio">$145</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🍗</div><div><h3>Pollo en mole</h3><p>Pollo bañado en mole tradicional.</p><div class="precio-fila"><span class="precio">$150</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🫔</div><div><h3>Enchiladas verdes</h3><p>Enchiladas bañadas en salsa verde.</p><div class="precio-fila"><span class="precio">$125</span><button class="chico">Agregar</button></div></div></article>
+    </section>
+
+    <section class="cat"><h2>Asados y parrilla</h2>
+      <article class="item"><div class="foto">🍖</div><div><h3>Costillas BBQ ahumadas</h3><p>Costillas tiernas con salsa BBQ de la casa.</p><div class="precio-fila"><span class="precio">$195</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🥩</div><div><h3>Arrachera con chimichurri</h3><p>Jugosa arrachera con chimichurri casero.</p><div class="precio-fila"><span class="precio">$210</span><button class="chico">Agregar</button></div></div></article>
+    </section>
+
+    <section class="cat"><h2>Guisos de la casa</h2>
+      <article class="item"><div class="foto">🍛</div><div><h3><a href="#producto">Birria de res</a></h3><p>Birria cremosa, cocida lentamente.</p><div class="precio-fila"><span class="precio">$160</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🌶️</div><div><h3>Chile relleno</h3><p>Chile relleno en salsa de la casa.</p><div class="precio-fila"><span class="precio">$135</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🥘</div><div><h3>Caldo de res</h3><p>Caldo con verduras y elote.</p><div class="precio-fila"><span class="precio">$120</span><button class="chico">Agregar</button></div></div></article>
+    </section>
+
+    <section class="cat"><h2>Postres tradicionales</h2>
+      <article class="item"><div class="foto">🍮</div><div><h3>Flan casero</h3><p>Suave y cremoso, hecho en casa.</p><div class="precio-fila"><span class="precio">$60</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🍚</div><div><h3>Arroz con leche</h3><p>Tradicional, cremoso y recortornillo.</p><div class="precio-fila"><span class="precio">$50</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🍰</div><div><h3>Pastel de tres leches</h3><p>Esponjoso y bañado en tres leches.</p><div class="precio-fila"><span class="precio">$70</span><button class="chico">Agregar</button></div></div></article>
+    </section>
+
+    <section class="cat"><h2>Bebidas</h2>
+      <article class="item"><div class="foto">🍷</div><div><h3>Agua de jamaica</h3><p>Fresca y natural, hecha al momento.</p><div class="precio-fila"><span class="precio">$35</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">☕</div><div><h3>Chocolate caliente</h3><p>Cremoso y calentito, con canela.</p><div class="precio-fila"><span class="precio">$45</span><button class="chico">Agregar</button></div></div></article>
+      <article class="item"><div class="foto">🫖</div><div><h3>Café de olla</h3><p>Tradicional café de olla con piloncillo.</p><div class="precio-fila"><span class="precio">$40</span><button class="chico">Agregar</button></div></div></article>
+    </section>
+  </div>
+
+  <section class="banner">
+    <div><h2>Menú familiar de domingo</h2><p>El sazón que reúne a todos en la mesa.<br>Platillos completos para disfrutar en familia.</p></div>
+    <div><a class="btn" href="#pedido">Ordena ahora</a><p style="font-size:.8rem;margin-top:.4rem">Haz tu pedido y disfruta en casa.</p></div>
+  </section>
+
+  <footer>
+    <div><h4>Navegación</h4>Inicio<br>Menú<br>Promociones<br>Sucursales</div>
+    <div><h4>Horarios</h4>Lunes a Viernes<br>11:00 am – 9:00 pm<br>Sábados y Domingos<br>9:00 am – 10:00 pm</div>
+    <div><h4>Contáctanos</h4>Calle del Sabor 123<br>Col. Tradición, C.P. 12345<br>Ciudad de México<br>55 1234 5678<br>hola@cielokitchen.mx</div>
+    <div><h4>Síguenos</h4>Síguenos en redes para más antojos y promociones.</div>
+  </footer>
+  <p class="copy">© 2026 Cielo Kitchen. Todos los derechos reservados.</p>
+</main>
+
+<!-- 2. DETALLE DE PLATILLO -->
+<main id="producto" class="vista">
+  <a class="volver" href="#menu">← Volver al menú</a>
+  <div class="detalle">
+    <div class="foto grande">🍛</div>
+    <div>
+      <p class="cat-nombre">Guisos de la casa</p>
+      <h1>Birria de res</h1>
+      <p class="desc">Birria de res cocida lentamente con chiles, especias y aromas de la casa, servida con tortillas, cilantro, cebolla y limón.</p>
+      <p class="precio">$189</p>
+      <div class="cantidad"><button aria-label="Quitar uno">−</button><span>1</span><button aria-label="Agregar uno">+</button></div>
+      <div class="acciones">
+        <a class="btn btn-block" href="#pedido">Agregar al carrito</a>
+        <a class="btn btn-block btn-borde" href="#menu">Volver al menú</a>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <section class="caja"><h2>Ingredientes</h2>
+      <p>carne de res, chiles guajillo y ancho, ajo, cebolla, comino, orégano, laurel, tortillas de maíz, cilantro, limón.</p>
+      <div class="etiquetas"><span>sin lácteos</span><span>picante medio</span></div>
+    </section>
+    <section class="caja"><h2>Información nutricional</h2>
+      <div class="kcal"><div><strong>620 kcal</strong>por porción</div>
+        <ul><li>proteínas:</li><li>carbohidratos:</li><li>grasas:</li></ul></div>
+    </section>
+  </div>
+  <section class="relacionados"><h2>También te puede gustar</h2>
+    <div class="rel-grid">
+      <a class="rel" href="#producto"><div class="foto">🫔</div><div><h3>Enchiladas de la casa</h3><span class="precio">$149</span></div></a>
+      <a class="rel" href="#producto"><div class="foto">🌮</div><div><h3>Tacos de carnitas</h3><span class="precio">$129</span></div></a>
+      <a class="rel" href="#producto"><div class="foto">🍚</div><div><h3>Arroz con leche</h3><span class="precio">$79</span></div></a>
+    </div>
+  </section>
+  <p class="copy" style="margin-top:1.5rem">Horarios: Lun–Dom · 12:00–22:00</p>
+</main>
+
+<!-- 3. PEDIDO ACTUAL (PUNTO DE VENTA) -->
+<main id="pedido" class="vista">
+  <div class="barra-user"><span>Ana Martínez</span><a href="#admin">Cerrar sesión</a></div>
+  <div class="pedido">
+    <section>
+      <h1>Pedido actual</h1>
+      <div class="lineas">
+        <div class="linea"><div class="foto">🍽️</div><div><strong>Milanesa con puré</strong><small>Sin nota</small></div><div class="mini"><button>−</button><span>2</span><button>+</button></div><b class="precio">$360.00</b><button class="quitar">🗑 Quitar</button></div>
+        <div class="linea"><div class="foto">🍛</div><div><strong>Birria de res</strong><small>Sin nota</small></div><div class="mini"><button>−</button><span>1</span><button>+</button></div><b class="precio">$185.00</b><button class="quitar">🗑 Quitar</button></div>
+        <div class="linea"><div class="foto">🍷</div><div><strong>Agua de jamaica</strong><small>Sin nota</small></div><div class="mini"><button>−</button><span>3</span><button>+</button></div><b class="precio">$90.00</b><button class="quitar">🗑 Quitar</button></div>
+        <div class="linea" style="border:0"><div class="foto">🍮</div><div><strong>Flan casero</strong><small>Sin nota</small></div><div class="mini"><button>−</button><span>2</span><button>+</button></div><b class="precio">$140.00</b><button class="quitar">🗑 Quitar</button></div>
+        <div class="notas"><label for="nota">Notas del pedido</label><textarea id="nota" placeholder="Añade una nota para cocina..."></textarea></div>
+        <a class="btn btn-borde btn-block" style="margin-top:1rem" href="#menu">⊕ Seguir agregando productos</a>
+      </div>
+    </section>
+
+    <aside>
+      <section class="resumen">
+        <h2>Resumen y pago</h2>
+        <label>Tipo de pedido</label>
+        <div class="segmento"><button class="on">Para comer aquí</button><button>Para llevar</button><button>A domicilio</button></div>
+        <label for="mesa">Número de mesa o nombre del cliente</label>
+        <select id="mesa"><option>Mesa 12</option><option>Mesa 13</option><option>Mesa 14</option></select>
+        <div class="totales">
+          <div><span>Subtotal</span><span>$775.00</span></div>
+          <div><span>IVA</span><span>$124.00</span></div>
+          <div><span>Propina opcional</span><span style="width:45%"><select><option>—</option><option>10%</option><option>15%</option></select></span></div>
+          <div class="total"><span>Total</span><b>$899.00</b></div>
+        </div>
+        <label>Método de pago</label>
+        <div class="segmento"><button>Efectivo</button><button class="on">Tarjeta</button><button>Transferencia</button></div>
+        <button class="btn btn-block" style="margin-top:1rem">Generar ticket</button>
+      </section>
+
+      <section class="ticket">
+        <h3>Cielo Kitchen</h3>
+        <small>Folio #CK-1048 · Fecha 5 oct 2026 · Empleado: Ana Martínez</small>
+        <table>
+          <tr><td>2 Milanesa con puré</td><td>$360.00</td></tr>
+          <tr><td>1 Birria de res</td><td>$185.00</td></tr>
+          <tr><td>1 Agua de jamaica</td><td>$90.00</td></tr>
+          <tr><td>2 Flan casero</td><td>$140.00</td></tr>
+          <tr class="tot"><td>Total</td><td>$899.00</td></tr>
+        </table>
+        <p>¡Gracias por visitar Cielo Kitchen!</p>
+        <button class="btn btn-borde" style="margin-top:.6rem;font-size:.8rem" onclick="window.print()">🖨 Imprimir ticket</button>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<!-- 4. ACCESO DE ADMINISTRADOR -->
+<main id="admin" class="vista">
+  <div class="login">
+    <form class="login-card" onsubmit="return false">
+      <div class="logo">Cielo Kitchen ☀</div>
+      <h1>Acceso de administrador</h1>
+      <label for="correo">Correo electrónico</label>
+      <input id="correo" type="email" autocomplete="email">
+      <label for="clave">Contraseña</label>
+      <input id="clave" type="password" autocomplete="current-password">
+      <button class="btn btn-block">Iniciar sesión</button>
+      <a href="#admin">¿Olvidaste tu contraseña?</a>
+    </form>
+  </div>
+</main>
+
+<script>
+// Marca el enlace activo del menú según la vista
+const enlaces=document.querySelectorAll('.topbar nav a');
+function marcar(){const h=location.hash||'#menu';enlaces.forEach(a=>a.classList.toggle('activo',a.getAttribute('href')===h||(h==='#producto'&&a.getAttribute('href')==='#menu')));window.scrollTo(0,0)}
+addEventListener('hashchange',marcar);marcar();
+// Botones de segmento (tipo de pedido / pago)
+document.querySelectorAll('.segmento').forEach(g=>g.addEventListener('click',e=>{if(e.target.tagName==='BUTTON'){g.querySelectorAll('button').forEach(b=>b.classList.remove('on'));e.target.classList.add('on')}}));
+// Cantidad en el detalle
+document.querySelectorAll('.cantidad').forEach(c=>{const s=c.querySelector('span'),[m,p]=c.querySelectorAll('button');m.onclick=()=>s.textContent=Math.max(1,+s.textContent-1);p.onclick=()=>s.textContent=+s.textContent+1});
+// Quitar líneas del pedido
+document.querySelectorAll('.quitar').forEach(b=>b.onclick=()=>b.closest('.linea').remove());
+</script>
+</body>
+</html>
